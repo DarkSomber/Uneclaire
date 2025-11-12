@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unéclaire | E-commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">
+      <img src="Group 4 logo.png" alt="Unéclaire Logo">
+      <span>Unéclaire</span>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li>
+        <a href="#cart" id="cart-link">
+        Cart <span id="cart-count" class="cart-badge">0</span>
+      </a>
+      </li>
+      <li><a href="#trackOrders" class="nav-link">Track Orders</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#account">Account</a></li>
+    </ul>
+  </nav>
+
+
+
+
+  <!-- ===== SUB-NAV ===== -->
+<div class="sub-nav">
+  <a href="#" data-category="all" class="active">All</a>
+  <a href="#" data-category="makeup">Makeup</a>
+  <a href="#" data-category="skincare">Skincare</a>
+  <a href="#" data-category="perfume">Perfume</a>
+</div>
+
+
+
+
+  <!-- HOME -->
+  <section id="home">
+    <video autoplay muted loop playsinline>
+      <source src="HomeVideo.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="home-content">
+      <h1>Unéclaire</h1>
+      <p>A light of one's own.</p>
+      <a href="#products">Get Started!</a>
+    </div>
+  </section>
+
+
+  <!-- PRODUCTS -->
+<section id="products">
+  <div class="product-search">
+    <input type="text" id="productSearch" placeholder="🔍 Search for products...">
+  </div>
+
+
+  <div class="product-grid">
+
+
+    <div class="product" data-name="daily moisturizing body lotion" data-price="352" data-category="skincare">
+      <img src="1.png" alt="Lotion">
+      <h3>Daily Moisturizing Body Lotion</h3>
+      <p>₱352.00</p>
+      <button onclick="addToCart('Daily Moisturizing Body Lotion', 352)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-name="hydrating cream" data-price="122" data-category="skincare">
+      <img src="2.png" alt="Cream">
+      <h3>Hydrating Cream</h3>
+      <p>₱122.00</p>
+      <button onclick="addToCart('Hydrating Cream', 122)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-name="uv facemilk" data-price="121" data-category="skincare">
+      <img src="3.png" alt="uv">
+      <h3>UV Face Milk</h3>
+      <p>₱121.00</p>
+      <button onclick="addToCart('UV Face Milk', 121)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-name="daily facial cleanser" data-price="243" data-category="skincare">
+      <img src="4.png" alt="cleanser">
+      <h3>Daily Facial Cleanser</h3>
+      <p>₱243.00</p>
+      <button onclick="addToCart('Daily Facial Cleanser', 243)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-name="micellar cleansing water" data-price="348" data-category="skincare">
+      <img src="5.png" alt="cleansing">
+      <h3>Micellar Cleansing Water</h3>
+      <p>₱348.00</p>
+      <button onclick="addToCart('Micellar Cleansing Water', 348)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-category="makeup">
+      <img src="6.png" alt="Eyeliner">
+      <h3>Glimmer Line Eyeliner</h3>
+      <p>₱143.00</p>
+      <button onclick="addToCart('Glimmer Line Eyeliner', 143)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-category="makeup">
+      <img src="7.png" alt="Powder">
+      <h3>Dream Matte Face Powder</h3>
+      <p>₱164.00</p>
+      <button onclick="addToCart('Dream Matte Face Powder', 164)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-category="makeup">
+      <img src="8.png" alt="Lipstick">
+      <h3>Bloomy Kiss Liquid Lipstick</h3>
+      <p>₱147.00</p>
+      <button onclick="addToCart('Bloomy Kiss Liquid Lipstick', 147)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-category="makeup">
+      <img src="9.png" alt="Mascara">
+      <h3>Lumina Lash Mascara</h3>
+      <p>₱169.00</p>
+      <button onclick="addToCart('Lumina Lash Mascara', 169)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-category="makeup">
+      <img src="10.png" alt="Concealer">
+      <h3>Moonbeam Cover Concealer</h3>
+      <p>₱145.00</p>
+      <button onclick="addToCart('Moonbeam Cover Concealer', 145)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-category="perfume">
+      <img src="11.png" alt="Perfume">
+      <h3>Adventure</h3>
+      <p>₱145.00</p>
+      <button onclick="addToCart('Adventure', 145)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-category="perfume">
+      <img src="12.png" alt="Perfume">
+      <h3>Cool</h3>
+      <p>₱352.00</p>
+      <button onclick="addToCart('Cool', 352)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-category="perfume">
+      <img src="13.png" alt="Perfume">
+      <h3>A light of one’s own</h3>
+      <p>₱473.00</p>
+      <button onclick="addToCart('A light of one’s own', 473)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-category="perfume">
+      <img src="14.png" alt="Perfume">
+      <h3>Dream</h3>
+      <p>₱223.00</p>
+      <button onclick="addToCart('Dream', 223)">Order Now</button>
+    </div>
+
+
+    <div class="product" data-category="perfume">
+      <img src="15.png" alt="Perfume">
+      <h3>Pure Honesty</h3>
+      <p>₱393.00</p>
+      <button onclick="addToCart('Pure Honesty', 393)">Order Now</button>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+  <!-- ABOUT -->
+<section id="about">
+  <h2>🌷 About Our Shop 🌷</h2>
+  <div class="about-container">
+
+
+    <div class="about-text">
+      <p>
+        Welcome to <strong>Unéclaire</strong> —  is a small online business established in the Philippines on October 15, 2025.
+        It was created with the goal of making skincare and makeup products more accessible to everyone, especially to young
+        Filipinos who value self-care and confidence. The company began as a simple idea among a group of students who noticed
+        that many local consumers struggled to find affordable yet quality beauty products in one convenient online space.
+      </p>
+
+
+      <p>
+        From that idea, Unèclaire developed its own e-commerce website where customers can easily browse, learn about,
+        and purchase different skincare and makeup items. The website includes simple product descriptions, ingredient
+        information, and usage tips to guide buyers in choosing what best suits their skin type and preferences.
+        Beyond offering trusted local and international brands, the company also supports small local beauty businesses
+        by giving them a platform to promote their products online.
+      </p>
+
+
+      <p>
+        Unèclaire stands by its belief in “A light of one’s own.” It aims to encourage self-confidence through safe,
+        genuine, and inclusive beauty choices for all skin tones and types. As the company continues to grow, it
+        remains committed to improving its website and customer service by keeping up with the latest beauty trends
+        and digital marketing strategies. Through its focus on trust, transparency, and technology, Unèclaire hopes
+        to become one of the most reliable online beauty stores in the Philippines.
+
+
+      </p>
+
+
+      <p class="quote">
+        “Beauty begins the moment you decide to take care of yourself.” 💖
+      </p>
+
+
+      <div class="about-buttons">
+        <a href="#tutorials" class="btn-about"> Watch Our Tutorials</a>
+        <a href="developer.html" class="btn-dev"> Meet Our Developers</a>
+      </div>
+    </div>
+
+
+    <div class="about-video">
+      <video autoplay muted loop playsinline>
+        <source src="Place holder Video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+  </div>
+</section>
+ 
+ 
+  <!-- CART SECTION -->
+<section id="cart">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+  <p id="empty-cart">Your cart is empty 💗</p>
+  <h3 id="cart-total"></h3>
+  <button id="checkout-btn" onclick="openCheckout()" style="display:none;">Proceed to Checkout</button>
+</section>
+
+
+
+
+<!-- TRACK ORDERS -->
+<section id="trackOrders" class="page-section">
+  <h2>Track Your Order</h2>
+
+
+  <div class="track-order">
+    <input type="text" id="trackOrderId" placeholder="Enter your Order ID">
+    <button onclick="trackOrder()">Track Order</button>
+  </div>
+
+
+  <div id="orderDetails" class="order-details" style="margin-top:20px;"></div>
+</section>
+
+
+
+
+ 
+
+
+<!-- CHECKOUT POPUP -->
+<div id="checkout-popup" class="checkout-popup">
+  <div class="checkout-box">
+    <span class="close-btn" onclick="closeCheckout()">&times;</span>
+    <h3>Checkout</h3>
+
+
+    <!-- ORDER SUMMARY -->
+    <div id="order-summary" class="order-summary">
+      <p><strong>Order Summary</strong></p>
+      <ul id="checkout-items"></ul>
+      <p class="total-line">Total: <span id="checkout-total">$0.00</span></p>
+    </div>
+
+
+    <form id="checkout-form">
+      <input type="text" id="custName" placeholder="Full Name" required>
+      <input type="text" id="custAddress" placeholder="Address" required>
+      <button type="button" onclick="getLocation()">📍 Use My Location</button>
+      <input type="tel" id="custContact" placeholder="Contact Number" required>
+      <input type="email" id="custEmail" placeholder="Email (optional)">
+      <select id="paymentMethod" required>
+        <option value="">Select Payment Method</option>
+        <option value="COD">Cash on Delivery</option>
+        <option value="Card">Credit/Debit Card</option>
+        <option value="GCash">GCash</option>
+      </select>
+
+      <div id="card-details" style="display:none;">
+        <input type="text" placeholder="Card Number" maxlength="16">
+        <input type="text" placeholder="Expiration Date (MM/YY)" maxlength="5">
+        <input type="text" placeholder="CVV" maxlength="3">
+      </div>
+
+
+      <button type="submit" class="confirm-btn">Confirm Order</button>
+      <button type="button" class="cancel-btn" onclick="closeCheckout()">Cancel</button>
+    </form>
+  </div>
+</div>
+
+<!-- THANK YOU MESSAGE -->
+<div id="thankyou-message" class="thankyou-message" style="display:none;">
+  <div class="thankyou-box">
+    <h3>Thank you for your purchase!</h3>
+    <p>Your Order ID is <strong id="order-id">#ORD00000</strong></p>
+    <p>You can use this ID to track your order in the “Track Orders” section.</p>
+    <button onclick="closeThankYou()">Close</button>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Personalized Skincare</h3>
+        <p>We offer skin consultations to help you find the perfect match for your unique glow.</p>
+      </div>
+      <div class="service">
+        <h3>Free Shipping</h3>
+        <p>Enjoy free nationwide shipping on all orders above ₱1000.</p>
+      </div>
+      <div class="service">
+        <h3>Gift Packaging</h3>
+        <p>Get premium packaging for special occasions, perfect for loved ones.</p>
+      </div>
+    </div>
+
+
+<div id="tutorials" class="tutorials">
+  <h2>✨ Skincare Video Tutorials ✨</h2>
+  <p>Learn how to take care of your skin with these simple, beginner-friendly tips!</p>
+
+
+  <div class="video-container">
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/BQWd08i6SoY?si=W6L2-zwKVJfOlIsg"
+              title="Skincare Basics"
+              allowfullscreen></iframe>
+      <h3>Skincare Basics for Glowing Skin</h3>
+    </div>
+
+
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/DmxjKP6pzmk?si=SiReyboi12ygCx7A"
+              title="Night Routine"
+              allowfullscreen></iframe>
+      <h3>Night Routine: Self-Care & Relaxation</h3>
+    </div>
+
+
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/kLahTjIwXdU?si=Y4-26OwtXPa4LQZS"
+              title="Product Tips"
+              allowfullscreen></iframe>
+      <h3>How to Choose the Right Product</h3>
+    </div>
+  </div>
+
+
+  <div class="video-container">
+  <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/nabwuTwtlnM?si=MC0wBtyyspGDowfO"
+              title="Skincare Basics"
+              allowfullscreen></iframe>
+      <h3>Skincare Basics for Glowing Skin</h3>
+    </div>
+
+
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/gbAc-DW7fPU?si=fUrBUD5B7uxUAgAj"
+              title="Night Routine"
+              allowfullscreen></iframe>
+      <h3>Night Routine: Self-Care & Relaxation</h3>
+    </div>
+
+
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/xZRsET_MUEg?si=Ah0HVZ1x9FOJeCsq"
+              title="Product Tips"
+              allowfullscreen></iframe>
+      <h3>How to Choose the Right Product</h3>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Your message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+
+<!-- ACCOUNT -->
+<section id="account">
+  <h2>Account</h2>
+  <div class="account-box" id="loginBox">
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+    <div class="toggle" onclick="toggleAccount()">Don't have an account? Sign Up</div>
+  </div>
+  <div class="account-box" id="signupBox" style="display:none;">
+    <input type="text" placeholder="Username">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Sign Up</button>
+    <div class="toggle" onclick="toggleAccount()">Already have an account? Login</div>
+  </div>
+</section>
+
+
+    <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="Group 4 logo.png" alt="Unéclaire Logo">
+        <span>Unéclaire</span>
+      </div>
+      <p>A light of one's own since 2025.</p>
+
+
+      <!-- STAR RATING SYSTEM -->
+<div class="star-rating">
+  <span class="star" data-value="1">★</span>
+  <span class="star" data-value="2">★</span>
+  <span class="star" data-value="3">★</span>
+  <span class="star" data-value="4">★</span>
+  <span class="star" data-value="5">★</span>
+</div>
+<p class="rating-result">No rating yet</p>
+
+
+      <div class="footer-socials">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"></a>
+      </div>
+      <p class="footer-bottom">© 2025 Unéclaire. All rights reserved.</p>
+    </div>
+  </body>
+  </footer>
+  <script src="interactions.js"></script>
+
+</body>
+</html>
+

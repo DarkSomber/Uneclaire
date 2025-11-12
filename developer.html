@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Developers | Unéclaire</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fff8f8;
+      color: #333;
+    }
+
+
+    nav {
+      background: #f7e6eb;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+
+    nav ul li a:hover {
+      color: #e26ea2;
+    }
+
+
+    .developer-section {
+      text-align: center;
+       margin-top: 100px;
+      padding: 60px 20px;
+    }
+
+
+    .developer-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+
+    .dev-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      justify-content: center;
+      align-items: stretch;
+      padding: 0 10%;
+    }
+
+
+    .dev-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+
+    .dev-card:hover {
+      transform: translateY(-5px);
+    }
+
+
+    .dev-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+
+    .dev-info h3 {
+      margin-bottom: 8px;
+      color: #e26ea2;
+    }
+
+
+    .dev-info p {
+      font-size: 0.9rem;
+      margin: 3px 0;
+    }
+
+
+    .dev-socials a {
+      color: #e26ea2;
+      text-decoration: none;
+      margin: 0 5px;
+      font-weight: 500;
+    }
+
+
+    .dev-socials a:hover {
+      text-decoration: underline;
+    }
+
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background-color: #e26ea2;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+
+    .back-btn:hover {
+      background-color: #c65488;
+    }
+
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      background: #f7e6eb;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+
+<body>
+
+
+  <nav>
+    <div class="nav-logo">
+      <img src="Group 4 logo.png" alt="Unéclaire Logo" style="height:40px;">
+      <span><strong>Unéclaire</strong></span>
+    </div>
+    <ul>
+      <li><a href="WEBSITE.html"> Home</a></li>
+      <li><a href="developer.html" class="active"> Developers</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="developer-section">
+    <h2>Meet Our Web Developers</h2>
+    <div class="dev-container">
+
+
+      <!-- Member 1 -->
+      <div class="dev-card">
+        <img src="images_member1.jpg" alt="Developer 1" class="dev-photo">
+        <div class="dev-info">
+          <h3>E.J C. Bagayan</h3>
+          <p><strong>Role:</strong> Leader </p>
+          <p><strong>Course:</strong> BS Computer Science</p>
+          <p><strong>School:</strong> Technological Institute of the Phlippines Q.C</p>
+          <p><strong>Age:</strong> 19 yr. old</p>
+          <p><strong>Birthday:</strong> October 18, 2006</p>
+          <p><strong>Pesonal Insterest:</strong> Travel, Dance, Gaming</p>
+          <p><strong>Desciption:</strong> I'm a person who loves theories, problem solving and team collaboration</p>
+          <div class="dev-socials">
+            <a href="https://www.facebook.com/hahahaburg">Facebook</a> |
+            <a href="https://www.instagram.com/ejayyyyy18/">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Member 2 -->
+      <div class="dev-card">
+        <img src="images_member2.jpg" alt="Developer 1" class="dev-photo">
+        <div class="dev-info">
+          <h3>Aiyenna M. Calacar</h3>
+          <p><strong>Role:</strong> Member </p>
+          <p><strong>Course:</strong> BS Computer Science</p>
+          <p><strong>School:</strong> Technological Institute of the Phlippines Q.C</p>
+          <p><strong>Age:</strong> 18 yr. old</p>
+          <p><strong>Birthday:</strong> June 27, 2007</p>
+          <p><strong>Pesonal Insterest:</strong> I like listening to music, watching movies, and spending time with people I'm close to
+                                                  I enjoy learning new things.</p>
+          <p><strong>Desciption:</strong> I'm the type of person who loves to laugh and make good memories with friends. I can be quiet at first
+                                          but once I'm comfortable I'm fun to be around. I try to stay focused on my goals and balance my time between
+                                          school and enjoying life along the way.</p>
+          <div class="dev-socials">
+            <a href="https://www.facebook.com/aiyenna.calacar">Facebook</a> |
+            <a href="https://www.instagram.com/aiyenc/">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Member 3 -->
+      <div class="dev-card">
+        <img src="images_member3.jpg" alt="Developer 1" class="dev-photo">
+        <div class="dev-info">
+          <h3>Jacqueline T. De Guzman</h3>
+          <p><strong>Role:</strong> Member </p>
+          <p><strong>Course:</strong> BS Computer Science</p>
+          <p><strong>School:</strong> Technological Institute of the Phlippines Q.C</p>
+          <p><strong>Age:</strong> 18 yr. old</p>
+          <p><strong>Birthday:</strong> December 27, 2006</p>
+          <p><strong>Pesonal Insterest:</strong> I love snoopy, playing online games, watching k-dramas, swimming, slepping and editing</p>
+          <p><strong>Desciption:</strong> I'm shy but approachable. My mind often drifts off when someones talkiing to
+                                          I'm a great listener who notices the little things.</p>
+          <div class="dev-socials">
+            <a href="https://www.facebook.com/jacque107">Facebook</a> |
+            <a href="https://www.instagram.com/lilyn__/">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Member 4 -->
+      <div class="dev-card">
+        <img src="images_member4.jpg" alt="Developer 1" class="dev-photo">
+        <div class="dev-info">
+          <h3> Maneissa S. Gallo</h3>
+          <p><strong>Role:</strong> Member </p>
+          <p><strong>Course:</strong> BS Computer Science</p>
+          <p><strong>School:</strong> Technological Institute of the Phlippines Q.C</p>
+          <p><strong>Age:</strong> 19 yr. old</p>
+          <p><strong>Birthday:</strong> October 05, 2006</p>
+          <p><strong>Pesonal Insterest:</strong> I’m interested in exploring the world, technology, and creative projects.
+                                                I enjoy discovering new ideas from others, learning different skills, and expressing
+                                                myself through creative work.</p>
+          <p><strong>Desciption:</strong> I’m friendly, curious, and goal driven student who enjoys learning and working with others.
+                                          I always try to stay motivated, open to challenges, and willing to grow both inside
+                                          and outside the classroom.</p>
+          <div class="dev-socials">
+            <a href="https://www.facebook.com/maneissa10gallo05.06">Facebook</a> |
+            <a href="https://www.instagram.com/im_neissa/">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <a href="index.html" class="back-btn">← Back to Shop</a>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Unéclaire | Developed by Team Group 4 | CS11S2</p>
+  </footer>
+
+
+</body>
+</html>
